@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Tajawal:wght@300&display=swap');
 :root {
-    --primary-color: rgb(194, 235, 253);
-    --secondary-color: rgb(0, 132, 255);
-    --accent1-color: #A43312;
-    --accent2-color: rgb(180, 95, 95);
-    --heading-font: 'Comfortaa';
-    --paragraph-font: sans-serif;
+    --primary-color: #151D16;
+    --secondary-color: #2B342D;
+    --accent1-color: #D6EAD6;
+    --accent2-color: #ABBCB2;
+    --heading-font: 'Tajawal', sans-serif;
+    --paragraph-font: 'Rubik', sans-serif;
     
 }
 header, main, footer {
@@ -15,16 +16,16 @@ header, main, footer {
   }
 
 .signature{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Rubik', sans-serif;
     color: black;
     
 }
 body {
     width: 100%;
     margin: 0 auto;
-    color: #fff;
-    background:linear-gradient(-45deg,rgb(255, 255, 255), 
-    rgb(255, 117, 244), rgb(58, 176, 255));
+    color: var(--primary-color);
+    background:linear-gradient(-45deg,rgb(252, 255, 218), 
+    rgb(206, 255, 222),rgb(189, 248, 240));
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
@@ -47,31 +48,31 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color:var(--accent1-color)
+    color:var(--primary-color)
 }
 
 header {
-    padding: 1em;
-    text-align: center;
-    color: var(--accent2-color);
-    background-color:var(--primary-color)
-}
 
-header>h1 {
-    color:var(--accent1-color)
+    text-align: center;
+    color: var(--primary-color)
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: var(--secondary-color);
+    color: white
     padding: 1em
+}
+
+.colorsb{
+font:white;
 }
 
 .colors {
     width: 100%;
     min-width: 350px;
     margin: auto;
-    text-align: center
+    text-align: center;
+    font: white;
 }
 
 .colors th {
@@ -80,11 +81,13 @@ p {
 
 .colors td {
     width: 25%;
-    height: 3em
+    height: 3em;
+    font: white;
 }
 
 .primary {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
+    
 }
 
 .secondary {
