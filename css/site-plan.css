@@ -59,8 +59,8 @@ header {
 
 p {
     font-family: var(--paragraph-font);
-    color: white
-    padding: 1em
+    color: white;
+    padding: 1em;
 }
 
 .colorsb{
