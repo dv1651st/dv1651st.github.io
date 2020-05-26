@@ -82,10 +82,10 @@ nav a:hover {
 }
 
  .img {
-    display: block;
+    object-fit: cover;
     width: 100%;
-    height: auto;
- }
+    height: 400px;
+}
 
 img#logo {
     max-width: auto;
@@ -112,11 +112,6 @@ p, .contact {
     background-color: var(--secondary-color);
 }
 
-h2.search {
-    padding-top: 15px;
-    text-align: center;
-}
-
 div.family p {
     max-width: 100%;
 }
@@ -136,21 +131,27 @@ p.copyright {
 
 h2,h3 {
     color: var(--secondary-color);
+    padding-top: 15px;
 }
 
-footer .contact {
+.contact {
     display: flex;
     justify-content: space-evenly;
     padding: 25px 0;
     background-color:var(--secondary-color);
     margin-top: 15px;
 }
+
 li { 
     list-style: none; 
 }
-.social img{
-    width: 50px;
-    height: auto;
+.social ul{
+    display: flex;
+    justify-content: space-evenly;
     filter: invert(100%) sepia(3%) saturate(12%) hue-rotate(75deg) brightness(105%) contrast(104%);
 
+}
+.social img{
+    width: 67px;
+    height: auto;
 }
