@@ -31,8 +31,9 @@ header, main, footer
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Scope One', serif;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
+    padding-top: 15px;
 }
 
 header {
@@ -129,17 +130,20 @@ p.copyright {
     text-align: center;
 }
 
-h2,h3 {
-    color: var(--secondary-color);
-    padding-top: 15px;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-evenly;
+footer {
+    display: grid;
+    justify-content: center;
     padding: 25px 0;
     background-color:var(--secondary-color);
     margin-top: 15px;
+}
+.social .contact{
+    grid-template-columns:1fr 1fr;
+}
+.copyright{
+    grid-column:2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 li { 
