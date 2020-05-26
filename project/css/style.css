@@ -81,12 +81,15 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
-main .hero-image {
-    margin-bottom: 40px;
-}
-
+ .img {
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+ 
 img#logo {
     max-width: auto;
+    max-height: auto;
     height: 70px;
     padding-right: 10px;
 }
