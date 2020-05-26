@@ -86,7 +86,7 @@ nav a:hover {
     width: 100%;
     height: auto;
  }
- 
+
 img#logo {
     max-width: auto;
     max-height: auto;
@@ -104,7 +104,7 @@ main .one div, .two div {
 }
 
 
-p, .footer {
+p, .contact {
     font-family: 'Scope One', serif;
     color: #ffffff;
     padding: 1rem;
@@ -138,7 +138,7 @@ h2,h3 {
     color: var(--secondary-color);
 }
 
-footer .footer {
+footer .contact {
     display: flex;
     justify-content: space-evenly;
     padding: 25px 0;
