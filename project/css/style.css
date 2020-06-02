@@ -1,63 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #7b61da;
-    --secondary-color: #201c30;
+    --primary-color: #3f3f3f;
+    --secondary-color: #3f3f3f;
     --accent1-color: #ffffff;
-    --accent2-color: #f4f5e5;
-    --heading-font: 'Scope One', serif;
+    --accent2-color: #c7c7c7;
+    --heading-font: 'PT Sans', sans-serif;
     --heading-font-color: --secondary-color;
 
 }
 
-html {
-    background-color: var(--accent1-color);
-}
 
 body {
-    max-width: 960px;
-    margin: 0px auto;
-    padding: 1em;
+    padding: 0em;
     font-size: 16px;
-    font-family: 'Scope One', serif;
-    background-color: var(--accent2-color);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    background-color: white;
+   
 }
 
-header, main, footer
+header, footer
 {
-    max-width: 960px;
+    max-width: 1fr;
     margin: 0 auto;
+    
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Scope One', serif;
-    color: var(--secondary-color);
+h2,h3,h4,h5,h6 {
+
+    color: var(--primary-color);
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
+    text-decoration: underline;
 }
 
-header {
+header{
     text-align: center;
-    color: var(--secondary-color);
-    background-color: #edf0c3;
+    background-color:var(--secondary-color);
     display: flex;
-    padding: 0;
     align-items: center;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+
 }
 
-header>h1 {
-    color: var(--secondary-color);
-    font-size: 1.5rem;
+.hero-image{
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    height: 150px;
 }
 
+
+header>div>h1 {
+    color: white;
+    font-size: 1.75rem;
+}
+header>div{
+    display:flex;
+}
 
 nav {
-    background-color: var(--secondary-color);
-    line-height: 3em;
+
     text-align: center;
-    font-size: 1.2rem;
-    color: var(--accent2-color);
+    font-size: 1.25rem;
+
+    
 
 }
 
@@ -65,11 +73,13 @@ nav>ul {
     list-style-type: none;
     display: flex;
     flex: 1 1 auto;
+    
 }
 
 nav a {
     padding: 1em;
-    min-width: 70px;
+    min-width: 10px;
+    text-decoration: none;
 }
 
 nav a:link,
@@ -78,35 +88,44 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: var(--accent2-color);
-    background-color: var(--secondary-color);
+    color: white;
 }
 
- .img {
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-}
 
 img#logo {
-    max-width: auto;
-    max-height: auto;
-    height: 70px;
-    padding-right: 10px;
+    max-width: 10%;
+    max-height: 60px;
+    padding: 20px;
+    filter: invert(100%) sepia(3%) saturate(12%) hue-rotate(75deg) brightness(105%) contrast(104%);
+
+}
+img{
+    object-fit: contain;
 }
 main .one,.two {
     display: flex;
-    justify-content: space-evenly;
-    margin: 30px auto;
+    margin: 0 auto;
+
+}
+main .two{
+    position:relative;
+    left: 20px;
+}
+main .three{
+    margin: 0 auto;
+
+}
+
+main .one,.two,.three{
+    max-width: 700px;
 }
 main .one div, .two div { 
-    width: 45%; 
+    width: 60%; 
     margin: 20px; 
 }
 
 
 p, .contact {
-    font-family: 'Scope One', serif;
     color: #ffffff;
     padding: 1rem;
     margin: 0;
@@ -133,29 +152,47 @@ p.copyright {
 footer {
     display: grid;
     justify-content: center;
-    padding: 25px 0;
+    padding: 5px ;
     background-color:var(--secondary-color);
     margin-top: 15px;
 }
 .social .contact{
     grid-template-columns:1fr 1fr;
 }
+.contact{
+    font-size: 20px;
+    padding: 0;
+    list-style: none;
+   
+}
+.contact>ul>li>ul{
+    text-indent: -10px;
+}
+
+.contact ul{
+    list-style: none;
+    text-indent: 0px;
+
+}
+
 .copyright{
     grid-column:2;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-li { 
-    list-style: none; 
-}
 .social ul{
     display: flex;
     justify-content: space-evenly;
     filter: invert(100%) sepia(3%) saturate(12%) hue-rotate(75deg) brightness(105%) contrast(104%);
+    list-style: none; 
 
 }
+
 .social img{
     width: 67px;
     height: auto;
+    margin-top: 20px;
+    position: relative;
+    right: 30px
 }
