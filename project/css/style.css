@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@media screen and (max-width: 550px) {
+    .______ {
+      display: block;
+    }
+  }
 :root {
     --primary-color: #3f3f3f;
     --secondary-color: #3f3f3f;
@@ -7,32 +12,44 @@
     --accent2-color: #c7c7c7;
     --heading-font: 'PT Sans', sans-serif;
     --heading-font-color: --secondary-color;
-
 }
 
 
 body {
     padding: 0em;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     background-color: white;
-   
+}
+main
+{
+    display:grid;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: 400px repeat(6);
+    grid-gap: 10px;
+
 }
 
 header, footer
 {
     max-width: 1fr;
     margin: 0 auto;
-    
 }
 
-h2,h3,h4,h5,h6 {
+h1 {
+    color: white;
+    font-size: 1.75rem;
+}
+
+
+h3,h4,h5,h6 {
 
     color: var(--primary-color);
     text-align: center;
     padding-top: 10px;
     text-decoration: underline;
+    font-size: 25px;
 }
 
 header{
@@ -44,18 +61,6 @@ header{
 
 }
 
-.hero-image{
-    width: 100%;
-    object-fit: fill;
-    object-position: center;
-    height: 150px;
-}
-
-
-header>div>h1 {
-    color: white;
-    font-size: 1.75rem;
-}
 header>div{
     display:flex;
 }
@@ -64,19 +69,15 @@ nav {
 
     text-align: center;
     font-size: 1.25rem;
-
-    
-
 }
 
 nav>ul {
     list-style-type: none;
     display: flex;
     flex: 1 1 auto;
-    
 }
 
-nav a {
+a {
     padding: 1em;
     min-width: 10px;
     text-decoration: none;
@@ -99,31 +100,111 @@ img#logo {
     filter: invert(100%) sepia(3%) saturate(12%) hue-rotate(75deg) brightness(105%) contrast(104%);
 
 }
-img{
+.beth,.beth2{
     object-fit: contain;
+    max-width: 300px;
+    height: auto;
 }
-main .one,.two {
-    display: flex;
-    margin: 0 auto;
 
+.hero-image{
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    height: 150px;
+    grid-column: 1/5;
+    grid-row: 1/2;
 }
-main .two{
+
+.banner-box{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180px 50px;
+    grid-column-gap: 100px;
+}
+
+h2 {
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    text-decoration: bold;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 700;
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 460px;
+    margin-left: 50px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    line-height: 160%;
+    border-top: 5px double;
+    border-bottom: 5px double;
+    text-align: center;
+}
+
+button{
+    background-color: darkorange;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    height: 70px;
+    grid-column: 2/3;
+    grid-row: 1;
+    position: relative;
+    right: 70px;
+    top: 65px;
+}
+
+.banner{
+    grid-column: 1/-1;
+    grid-row: 1;
+    box-shadow: 5px 5px 5px #999;
+}
+
+button:hover {
     position:relative;
-    left: 20px;
-}
-main .three{
-    margin: 0 auto;
-
+    display:block;
+    background-color: rgb(255, 166, 57);
 }
 
-main .one,.two,.three{
-    max-width: 700px;
+.one
+{
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
-main .one div, .two div { 
-    width: 60%; 
-    margin: 20px; 
+.beth{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin-left: 80px;
+    margin-top: 60px;
+    box-shadow: 5px 5px 5px #999;
 }
 
+.two
+{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+.beth2{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 80px;
+    box-shadow: 5px 5px 5px #999;
+}
+
+.three
+{
+   grid-column:2/4;
+   grid-row:6/7;
+}
+
+.three>p{
+    margin-bottom: 30px;
+
+}
 
 p, .contact {
     color: #ffffff;
@@ -132,13 +213,6 @@ p, .contact {
     background-color: var(--secondary-color);
 }
 
-div.family p {
-    max-width: 100%;
-}
-
-p.colored {
-    color: var(--secondary-color);
-}
 
 p.heading {
     font-family: 'Scope One', serif;
