@@ -26,14 +26,14 @@ main
 {
     display:grid;
     grid-template-columns: 1fr 400px 400px 1fr;
-    grid-template-rows: 400px repeat(6);
+    grid-template-rows: 400px repeat(5);
     grid-gap: 10px;
 
 }
 
 header, footer
 {
-    max-width: 1fr;
+    width: 1fr;
     margin: 0 auto;
 }
 
@@ -126,7 +126,6 @@ img#logo {
 h2 {
     font-size: 34px;
     color: rgb(255, 255, 255);
-    text-decoration: bold;
     font-family: 'Rock Salt', cursive;
     font-weight: 700;
     grid-column: 1/2;
