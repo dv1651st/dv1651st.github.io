@@ -134,42 +134,42 @@ h2 {
    grid-row: 3/4;
 }
 
-
-.f1{
-    grid-column: 2/3;
-    grid-row: 4/5
-}
-
-.f2{
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-.f2,p{
-    position: relative;
-    bottom: 16px;
-    left: 20px;
-    padding-left: 10px;
-}
 h5{
     position: relative;
     top: 10px;
 }
 
 .bern2{
-    grid-column: 3/4;
-    grid-row: 5/6;
+    grid-column: 2/3;
+    grid-row: 4/5;
     margin-left: 30px;
     margin-top: 50px;
     box-shadow: 5px 5px 5px #999;
 }
+
 .two
 {
-    grid-column: 2/3;
-    grid-row: 5/6;
+    grid-column: 3/4;
+    grid-row: 4/5;
     padding-right: 20px;
 
 }
 
+.bern3{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-left: 30px;
+  margin-top: 50px;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.three
+{
+  grid-column: 3/4;
+  grid-row: 5/6;
+  padding-right: 20px;
+
+}
 
 p.copyright {
     max-width: 100%;
