@@ -7,7 +7,7 @@
         <title>
         "Temple Inn &amp; Suites | Check out our temple of the month!"
         </title>
-        <link rel="stylesheet" href="css/templespotlight.css">
+        <link rel="stylesheet" href="css/reservations.css">
    </head>
     <body>
         <header>
@@ -29,50 +29,50 @@
         <main>
             <h2>Reservations!</h2>
             <img class="hero-image" src="images/banner.png" alt="snazzy banner">
-            <img class="bern1" width="400" src="images/templepic1.jpeg" alt="Bern Switzerland Temple 1">
-            <div class="one">
-                <h3>Your Home Away From Home</h3>
-                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aspernatur quisquam quidem veniam perferendis provident 
-                aut eveniet impedit. Doloribus id in quo distinctio 
-                inventore ea eum nihil reiciendis, consectetur dolorum delectus.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aspernatur quisquam quidem veniam perferendis provident 
-                aut eveniet impedit. Doloribus id in quo distinctio.
-                </p>
-            </div>
-            
-            <div class="f1">
-                <h4>Fun Fact 1</h4>
-                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aspernatur quisquam quidem veniam perferendis provident 
-                aut eveniet impedit. Doloribus id in quo distinctio. 
-                </p>
-            </div>
-            <div class="f2"> 
-                <h5>Fun Fact 2</h5>
-                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aspernatur quisquam quidem veniam perferendis provident 
-                aut eveniet impedit. Doloribus id in quo distinctio. 
-                </p>
-            </div>
-                
-            <img class="bern2" width="400" src="images/templepic2.jpeg" alt="Bern Switzerland Temple 2">
-            <div class="two">
-                <div class="h7">Wedding Receptions</div>
-                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aspernatur quisquam quidem veniam perferendis provident 
-                aut eveniet impedit. Doloribus id in quo distinctio 
-                inventore ea eum nihil reiciendis, consectetur dolorum delectus.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Aspernatur quisquam quidem veniam perferendis provident 
-                aut eveniet impedit. Doloribus id in quo distinctio 
-                inventore ea eum nihil reiciendis, consectetur dolorum delectus.
-                </p>
+            <div class="form">
+                <div class="container">
+                    <form action="/action_page.php">
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <input type="submit" value="Submit">
+                    </div>
+                    </form>
+                </div>
             </div>
         </main>
 
